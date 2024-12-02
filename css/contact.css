@@ -1,0 +1,209 @@
+/* .contact-conatiner{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+background-color: red;
+margin-top: 3rem;
+position: relative;
+height: 23rem;
+}.contact-img img {
+    height: 220px;
+    width: 220px;
+}.left-contact{
+    background-color: yellow;
+    height: 400px ;
+    left: 2rem;
+    width: 400px;
+    position: absolute;
+
+} */
+ 
+.contact-conatiner{
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 4rem auto ;
+    border-radius: 1rem;
+
+}
+
+.contact-img img {
+    height: 200px;
+    width: 200px;
+
+}.left-contact{
+    background: var(--color-primary);
+    padding: 2rem;
+    padding-bottom: 0px !important;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+    margin-top: 2rem;
+
+}
+
+
+.contact-info h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}.contact-info p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+
+}
+.contact-info .footer-contact{
+    display: flex;
+    justify-content: center;
+text-align: left;   
+ flex-direction: column;
+}
+
+.contact-info .footer-contact i{
+    padding-right: 1rem;
+
+}
+
+.contact-info .footer-contact .footer-social {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 14px !important;
+
+margin:2rem 0  3rem;
+
+}
+
+
+/* form */
+.contact-forn{
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+.form-name
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-forn input[type="text"]
+{
+    width: 50%;
+
+}
+input,textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+color: var(--color-white);
+resize: none;
+
+}
+.contact-forn .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+}
+/* responsive  for tablets*/
+@media screen  and (max-width:1024px){
+    section{
+        padding: 5px !important;
+        margin-top: 2rem;
+    }
+    .contact-conatiner{
+        padding-left: 1rem;
+        gap: 2rem;
+       
+    }
+    .left-contact .contact-img img{
+        width: 120px;
+        height: 120px;
+
+    }
+    .left-contact{
+        padding: 1rem;
+    top: -100px;
+      
+    }
+    .contact-info h2{
+        margin-bottom: 5px !important;
+    }.contact-info p{
+        font-size: 0.8rem;
+    }
+.footer-contact {
+    font-size: 0.7rem;
+}
+.contact-info .footer-contact i{
+    padding-right: 0.6rem;
+}
+
+.contact-info .footer-contact .footer-social {
+    gap: 11px !important;
+    margin:1.5rem 0  2rem;
+    }
+    .contact-forn{
+        gap: 1rem;
+        margin-right: 0.5rem;
+    }
+    .form-name
+    {
+        gap: 0.6rem;
+    }
+    .contact-forn .btn{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }    
+}
+
+
+/* mobileview */
+@media screen and (max-width:600px) {
+    .contact-conatiner{
+        grid-template-columns: 1fr;
+        margin-top: 5rem !important;
+        margin-bottom: 2rem !important;
+        height: 63rem !important;
+        gap: 0;
+
+
+    }
+    
+    
+    
+    .left-contact{
+        margin-top: 3rem !important;
+        margin-left: 1.8rem;
+        margin-bottom: 0px !important;
+    }
+    .left-contact .contact-img  img{
+        height: 200px;
+        width: 200px;
+        
+    }
+    .left-contact .contact-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-forn{
+        gap: 0.7rem;
+        margin-left: 1.8rem;
+    }.form-name{
+        flex-direction: column;
+
+    }
+.form-name input[type="text"]{
+    width: 100%;
+}
+
+    
+}
